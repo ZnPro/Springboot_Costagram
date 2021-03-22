@@ -37,3 +37,8 @@
 create user 'costa'@'%' identified by 'costa1234';
 GRANT ALL PRIVILEGES ON *.* TO 'costa'@'%';
 create database costa;
+
+### 주의사항
+
+resoruces/static 폴더가 디폴트 경로
+이 경로를 제대로 확인 안해주면 style.css랑 image를 못 불러옴
