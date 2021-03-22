@@ -34,9 +34,11 @@
 
 ### 데이터 베이스
 
+```
 create user 'costa'@'%' identified by 'costa1234';
 GRANT ALL PRIVILEGES ON *.* TO 'costa'@'%';
 create database costa;
+```
 
 ### 주의사항
 
