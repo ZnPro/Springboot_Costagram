@@ -24,14 +24,15 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter{
 	protected void configure(HttpSecurity http) throws Exception{
 		http.csrf().disable();
 		http.authorizeRequests()
-			.antMatchers("/","/user/**","/image/**","/folloew/**").access("hasRole('ROLE_USER') or hasRole('ROLE_ADMIN')")
+			.antMatchers("/","/user/**","/image/**","/follow/**").access("hasRole('ROLE_USER') or hasRole('ROLE_ADMIN')")
 			.antMatchers("/admin/**").access("hasRole('ROLE_ADMIN')")
 			.anyRequest()
 			.permitAll()
 			.and()
 			.formLogin()
 			.loginPage("/auth/loginForm")
-			.loginProcessingUrl("/");
+			.loginProcessingUrl("/login")//post /login 주소를 디스패처 확인하면 필터가 낚아챔
+			.defaultSuccessUrl("/");
 		//oath2.0과 CORS는 나중에
 		
 	}
