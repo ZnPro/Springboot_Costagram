@@ -1,4 +1,4 @@
-package com.cos.costagram.domain.user;
+package com.cos.costagram.domain;
 
 import java.sql.Timestamp;
 
@@ -12,8 +12,14 @@ import org.hibernate.annotations.CreationTimestamp;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
+@Builder
+@AllArgsConstructor
+@NoArgsConstructor
 @Data
 @Entity
 //모델 만들기
