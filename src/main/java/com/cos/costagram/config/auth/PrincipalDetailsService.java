@@ -5,7 +5,7 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
-import com.cos.costagram.domain.User;
+import com.cos.costagram.domain.user.User;
 import com.cos.costagram.domain.user.UserRepository;
 
 import lombok.RequiredArgsConstructor;

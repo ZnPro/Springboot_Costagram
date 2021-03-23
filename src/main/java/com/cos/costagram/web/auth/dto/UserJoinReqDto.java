@@ -1,6 +1,6 @@
 package com.cos.costagram.web.auth.dto;
 
-import com.cos.costagram.domain.User;
+import com.cos.costagram.domain.user.User;
 
 import lombok.Data;
 

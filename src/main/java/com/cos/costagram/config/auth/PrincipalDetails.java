@@ -6,7 +6,7 @@ import java.util.Collection;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
-import com.cos.costagram.domain.User;
+import com.cos.costagram.domain.user.User;
 
 public class PrincipalDetails implements UserDetails {
 	private User user;

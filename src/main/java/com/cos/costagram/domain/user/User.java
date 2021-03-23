@@ -1,4 +1,4 @@
-package com.cos.costagram.domain;
+package com.cos.costagram.domain.user;
 
 import java.sql.Timestamp;
 
@@ -41,7 +41,7 @@ public class User {
 	private String phone;
 	private String gender;
 	
-	private String profileImage;
+	private String profileImageUrl;
 	private String provider;//제공자 구글,페북,네이버
 	
 	private String role; //USER, ADMIN
